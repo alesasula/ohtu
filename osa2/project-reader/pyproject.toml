@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "project-reader"
 version = "0.1.0"
-description = ""
+description = "Sovellus joka toimii testisyötteenä ohtun osan 2 laskareihin"
 authors = ["aleksi sulasalmi <sulasaal@jyu.fi>"]
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
