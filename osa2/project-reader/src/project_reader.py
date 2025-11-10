@@ -11,9 +11,6 @@ class ProjectReader:
         content = request.urlopen(self._url).read().decode("utf-8")
         toml_data = tomli.loads(content)
 
-        print(content)
-        print(toml_data)
-
         # deserialisoi TOML-formaatissa oleva merkkijono ja muodosta Project-olio sen tietojen perusteella
         tool_data = toml_data.get("tool", {}).get("poetry", {})
 
