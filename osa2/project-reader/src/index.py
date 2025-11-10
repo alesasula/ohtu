@@ -2,7 +2,7 @@ from project_reader import ProjectReader
 
 
 def main():
-    url = "https://raw.githubusercontent.com/ohjelmistotuotanto-jyu/tehtavat/refs/heads/main/osa2/project-reader/pyproject.toml"
+    url = "https://raw.githubusercontent.com/alesasula/ohtu/refs/heads/main/osa2/project-reader/pyproject.toml"
     reader = ProjectReader(url)
     print(reader.get_project())
 
