@@ -19,9 +19,8 @@ class ProjectReader:
         license = tool_data.get("license")
         authors = tool_data.get("authors", [])
         dependencies = list(tool_data.get("dependencies", {}).keys())
-        dev_dependencies = list(
-            tool_data.get("group", {}).get("dev", {}).get("dependencies", {}).keys()
-        )
+        dev_groups = toml_data.get("dependency-groups", {})
+        dev_dependencies = list(dev_groups.get("dev", []))
 
         return Project(name, description, license, authors, dependencies, dev_dependencies)
 
