@@ -5,7 +5,7 @@ FROM python:3.10
 WORKDIR /app
 
 # Kopioidaan ohjelma konttiin
-COPY hello.py
+COPY hello.py .
 
 # Käynnistyskomento
 CMD ["python", "hello.py"]
